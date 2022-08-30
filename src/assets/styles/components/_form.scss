@@ -1,0 +1,72 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1%;
+
+  input[type=text],
+  input[type=email],
+  input[type=date],
+  input[type=number],
+  textarea {
+    padding: 0.5rem;
+    background: $white;
+  }
+
+  select {
+    padding: 0.6rem;
+    background: $white;
+  }
+
+  .error {
+    display: none;
+  }
+
+  &.invalid {
+    input, textarea, select {
+      border-color: $red;
+      background-color: #f8d7da;
+    }
+    .error {
+     display: block;
+    }
+  }
+}
+
+.form-buttons {
+  padding: 1%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+textarea {
+  resize: none;
+}
+
+.message .error {
+  color: $white;
+  background: $red;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  &:before {
+    @include fa-icon('\f12a');
+  }
+}
+
+@include media-up($desktop){
+  .form-row {
+    display: flex;
+  }
+
+  .form-control.w-auto {
+    width: auto;
+  }
+
+  .form-control.w-50 {
+    width: 50%;
+  }
+
+}
+

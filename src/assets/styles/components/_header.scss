@@ -1,0 +1,33 @@
+header {
+  @include color($white);
+  background: $black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: $header-padding-y $container-padding-x;
+  position: relative;
+  z-index: 1000;
+
+  img.logo {
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 7%;
+    z-index: 2;
+  }
+
+  @include media-up($tablet){
+    img.logo {
+      height: 170px;
+      left: 12%;
+    }
+  }
+
+  @include media-up($desktop){
+    img.logo {
+      height: 200px;
+      left: 12%;
+    }
+  }
+
+}

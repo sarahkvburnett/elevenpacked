@@ -1,0 +1,41 @@
+// Colours
+$primary: #005826;
+$background: #fff;
+$accent: #45A1AD;
+
+$black: #000;
+$white: #fff;
+$grey: #E8E8E8;
+$gray: $grey;
+$red: #cc0000;
+
+// Breakpoints
+$mobile: 576px;
+$tablet: 992px;
+$desktop: 1200px;
+
+//Typography
+$font-family: sans-serif;
+$base-font-size: 16px;
+$body-font-size: 1.1rem;
+$h1-font-size: 2.9rem;
+$h2-font-size: 2.1rem;
+$h3-font-size: 1.4rem;
+$h4-font-size: 1.2rem;
+
+//Buttons
+$btn-padding: 0.5rem 2rem;
+$btn-border-radius: 25px;
+
+//Spacing
+$spaces: (
+    "0": 0rem,
+    "1": 0.5rem,
+    "2": 1rem,
+    "3": 2rem
+);
+
+$container-padding-x: 7%;
+$header-padding-y: 1rem;
+$section-padding-y: 2rem;
+$footer-padding-y: 2rem;

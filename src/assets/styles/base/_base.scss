@@ -1,0 +1,51 @@
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: $font-family;
+  font-size: $body-font-size;
+  &.menu-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+body, header, main, footer {
+  width: 100vw;
+}
+
+section:not(.py-0):not(.hero):not(.banner):not(.map) {
+  padding-top: $section-padding-y;
+  padding-bottom: $section-padding-y;
+  width: 100vw;
+}
+
+section.content {
+  background: $green;
+  color: $white;
+}
+
+section.green {
+  background: $green2;
+  color: $white;
+}
+
+section.accent {
+  background: $accent;
+  color: $white;
+}
+
+a:not(.btn) {
+  color: inherit;
+  &:hover {
+    color: $accent;
+  }
+}

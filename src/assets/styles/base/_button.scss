@@ -1,0 +1,27 @@
+.btn {
+  padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: $accent;
+  border: 2px solid $accent;
+  color: $white;
+  &:not(.no-hover):hover {
+    border: 2px solid $accent;
+    background-color: $accent;
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid $accent;
+  color: $accent;
+  &:not(.no-hover):hover {
+    border: 2px solid $accent;
+    background-color: $accent;
+    color: $white;
+  }
+}
