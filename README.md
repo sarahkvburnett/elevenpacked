@@ -1,15 +1,13 @@
 # Elevenpacked
 
-A simple Eleventy Starter Kit, my base for all new 11ty projects. ([Demo Site](https://eleventastic.netlify.com))
+A simple Eleventy Starter Kit, my base for all new 11ty projects.
 
-Based of Eleventastic (no external build, maintains manifest.json) & eleventy-webpack (images)
+Based of Eleventastic (no external build, maintains manifest.json)
 
 ## Features
 
 * CSS Pipeline (Sass, CleanCSS)
 * JS Bundling (Webpack)
-* Responsive images and cached remote images (@11ty/eleventy-img)
-* SVG Icon Sprite Generation
 * Critical CSS
 * HTML Minification
 * No external builds, everything runs through 11ty
@@ -35,11 +33,6 @@ Styling works with Sass. The main index file is in src/assets/styles/main.scss. 
 ## JS
 
 Javascript can be written in ES6 syntax. The main index file is in src/assets/scripts/main.js. It will be transpiled to ES5 with babel, bundled together with webpack, and minified in production. The output is in public/assets/scripts/main.js
-
-## SVG Icons
-
-All SVG files added to `src/assets/icons` will be bundled into a `symbol` sprite file. The SVG filename will then be used as the symbol identifier and the icon can be used as a shortcode.
-For example, if you have a `github.svg` file in that folder, you can display it anywhere by using `{% icon "github" %}` in your templates.
 
 ## Critical CSS
 
