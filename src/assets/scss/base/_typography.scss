@@ -51,12 +51,6 @@ p {
     text-align: right !important;
 }
 
-.section-title {
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 .text-accent {
-    @include color($accent);
+    color: $accent;
 }

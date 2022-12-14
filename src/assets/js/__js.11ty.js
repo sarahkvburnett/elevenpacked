@@ -32,7 +32,7 @@ module.exports = class {
             }
         ]
 
-        // pass environment down to scripts
+        // pass environment down to js
         const envPlugin = new webpack.EnvironmentPlugin({
             ELEVENTY_ENV: process.env.ELEVENTY_ENV
         })
@@ -47,7 +47,7 @@ module.exports = class {
         }
 
         return {
-            permalink: `/assets/scripts/${ENTRY_FILE_NAME}`,
+            permalink: `/assets/js/${ENTRY_FILE_NAME}`,
             eleventyExcludeFromCollections: true,
             webpackConfig
         }

@@ -1,5 +1,5 @@
 // This file handles the CSS build.
-// It will run Sass and compile all styles defined in the main entry file.
+// It will run Sass and compile all scss defined in the main entry file.
 
 // main entry point name
 const ENTRY_FILE_NAME = 'main.scss'
@@ -14,7 +14,7 @@ module.exports = class {
     async data() {
         const entryPath = path.join(__dirname, `/${ENTRY_FILE_NAME}`)
         return {
-            permalink: `/assets/styles/main.css`,
+            permalink: `/assets/css/main.css`,
             eleventyExcludeFromCollections: true,
             entryPath
         }
@@ -42,7 +42,7 @@ module.exports = class {
     async minify(css) {
         return new Promise((resolve, reject) => {
             // if (!isProd) {
-            //     resolve(css)
+            //     resolve(scss)
             // }
             const minified = new CleanCSS().minify(css)
             if (!minified.styles) {

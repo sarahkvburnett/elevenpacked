@@ -14,12 +14,6 @@
     }
 }
 
-@include media-up($desktop){
-    .flex-desktop {
-        display: flex;
-    }
-}
-
 /** Grid **/
 
 .grid {
@@ -55,3 +49,44 @@
     justify-content: center;
 }
 
+/** Media Breakpoints **/
+.d-none {
+    display: none;
+}
+
+.d-md-none {
+    @include media-up($tablet){
+        display: none;
+    }
+}
+
+.sm-only,
+.d-lg-none {
+    @include media-up($desktop){
+        display: none;
+    }
+}
+
+.d-md-block {
+    @include media-up($tablet){
+        display: block;
+    }
+}
+
+.d-lg-block {
+    @include media-up($desktop){
+        display: block;
+    }
+}
+
+.d-md-flex {
+    @include media-up($tablet){
+        display: flex;
+    }
+}
+
+.d-lg-flex {
+    @include media-up($desktop){
+        display: flex;
+    }
+}

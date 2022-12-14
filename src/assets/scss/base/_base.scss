@@ -18,34 +18,16 @@ main {
   flex: 1;
 }
 
-body, header, main, footer {
+body, header, main, footer, section {
   width: 100vw;
 }
 
-section:not(.py-0):not(.hero):not(.banner):not(.map) {
+section.padding {
   padding-top: $section-padding-y;
   padding-bottom: $section-padding-y;
-  width: 100vw;
-}
-
-section.content {
-  background: $green;
-  color: $white;
-}
-
-section.green {
-  background: $green2;
-  color: $white;
 }
 
 section.accent {
   background: $accent;
   color: $white;
-}
-
-a:not(.btn) {
-  color: inherit;
-  &:hover {
-    color: $accent;
-  }
 }
