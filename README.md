@@ -6,7 +6,7 @@ Based of Eleventastic (no external build, maintains manifest.json)
 
 ## Features
 
-* CSS Pipeline (Sass, CleanCSS)
+* CSS Pipeline (SCSS, CleanCSS)
 * JS Bundling (Webpack)
 * Critical CSS
 * HTML Minification
@@ -28,7 +28,7 @@ npm install
 
 ## CSS
 
-Styling works with Sass. The main index file is in src/assets/styles/main.scss. Import any SCSS code you want in there; it will be processed and optimized. The output is in public/assets/styles/main.css.
+Styling works with SASS/SCSS. The main index file is in src/assets/styles/main.scss. Import any SCSS code you want in there; it will be processed and optimized. The output is in public/assets/styles/main.css.
 
 ## JS
 

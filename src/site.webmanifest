@@ -1,8 +1,8 @@
 {
     "lang": "en",
     "dir": "ltr",
-    "name": "Expenses App",
-    "short_name": "expenses",
+    "name": "Elevenpacked",
+    "short_name": "elevenpacked",
     "icons": [
         {
             "src": "/assets/images/favicon/android-chrome-192x192.png",

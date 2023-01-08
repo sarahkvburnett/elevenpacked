@@ -1,4 +1,13 @@
+require('dotenv').config()
+
+const filters = require('./utils/filters.js')
+
 module.exports = function (config) {
+
+    // Add Filters
+    Object.keys(filters).forEach((filterName) => {
+        config.addFilter(filterName, filters[filterName])
+    })
 
     // Asset Watch Targets
     config.addWatchTarget('./src/assets')
@@ -17,9 +26,9 @@ module.exports = function (config) {
         dir: {
             input: 'src',
             output: 'dist',
-            includes: 'includes',
-            layouts: 'layouts',
-            data: 'data'
+            includes: '_includes',
+            layouts: '_layouts',
+            data: '_data'
         },
         templateFormats: ['njk', 'md', '11ty.js'],
         htmlTemplateEngine: 'njk',
