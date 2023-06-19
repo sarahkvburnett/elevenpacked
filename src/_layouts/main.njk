@@ -3,7 +3,7 @@
 <head>
     {% include "meta.njk" %}
     {% block head %}{% endblock %}
-    <title>{% block title %}{% endblock %}</title>
+    <title>{{ title }} - {{ contact.name }}</title>
 </head>
 <body>
 {% include "header.njk" %}

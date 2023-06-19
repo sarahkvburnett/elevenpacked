@@ -1,41 +1,46 @@
 // Colours
-$primary: #005826;
-$background: #fff;
-$accent: #45A1AD;
-
-$black: #000;
+$orange: #FF9900;
+$purple: #9100FF;
+$black: #383838;
 $white: #fff;
-$grey: #E8E8E8;
+$grey: #EFEFEF;
 $gray: $grey;
 $red: #cc0000;
+$green: #3EB802;
 
 // Breakpoints
-$mobile: 576px;
-$tablet: 992px;
-$desktop: 1200px;
+$sm: 640px;
+$md: 768px; //tablet
+$lg: 1024px;
+$xl: 1280px; //desktop
+$xxl: 1736px;
 
 //Typography
 $font-family: sans-serif;
 $base-font-size: 16px;
-$body-font-size: 1.1rem;
-$h1-font-size: 2.9rem;
-$h2-font-size: 2.1rem;
-$h3-font-size: 1.4rem;
-$h4-font-size: 1.2rem;
+$body-font-size: 0.9rem;
+$lead-font-size: 1.1rem;
+$h1-font-size: 1.8rem;
+$h2-font-size: 1.2rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.1rem;
+$h5-font-size: $body-font-size;
 
+$body-font-weight: 200;
 //Buttons
-$btn-padding: 0.5rem 2rem;
+$btn-padding: 0.6rem 2rem;
 $btn-border-radius: 25px;
+$btn-font-size: 1rem;
 
 //Spacing
 $spaces: (
     "0": 0rem,
-    "1": 0.5rem,
-    "2": 1rem,
-    "3": 2rem
+    "0.5": 0.5rem,
+    "1": 1rem,
+    "2": 2rem
 );
 
-$container-padding-x: 7%;
+$container-padding-x: 3%;
 $header-padding-y: 1rem;
 $section-padding-y: 2rem;
 $footer-padding-y: 2rem;

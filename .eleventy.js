@@ -1,6 +1,8 @@
 require('dotenv').config()
 
-const filters = require('./utils/filters.js')
+const filters = require('./utils/filters')
+const transforms = require('./utils/transforms')
+const shortcodes = require('./utils/shortcodes')
 
 module.exports = function (config) {
 
@@ -9,8 +11,23 @@ module.exports = function (config) {
         config.addFilter(filterName, filters[filterName])
     })
 
+    // Transforms
+    Object.keys(transforms).forEach((transformName) => {
+        config.addTransform(transformName, transforms[transformName])
+    })
+
+    // Shortcodes
+    Object.keys(shortcodes).forEach((shortcodeName) => {
+        config.addShortcode(shortcodeName, shortcodes[shortcodeName])
+    })
+
     // Asset Watch Targets
     config.addWatchTarget('./src/assets')
+
+    //Tailwind
+    config.addWatchTarget('./styles/tailwind.config.js')
+    config.addWatchTarget('./styles/tailwind.css')
+    config.addPassthroughCopy({ './_tmp/style.css': './assets/css/style.css' })
 
     // Pass-through files
     config.addPassthroughCopy('src/robots.txt')

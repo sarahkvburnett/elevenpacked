@@ -1,9 +1,0 @@
-.container {
-  padding-left: $container-padding-x;
-  padding-right: $container-padding-x;
-
-  @include media-up($desktop){
-    padding-left: calc(#{$container-padding-x} + 5%);
-    padding-right: calc(#{$container-padding-x} + 5%);
-  }
-}

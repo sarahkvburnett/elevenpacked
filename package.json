@@ -1,18 +1,18 @@
 {
-  "name": "Elevenpacked",
+  "name": "ardigitalsolutions",
   "version": "1.0.0",
-  "description": "Eleventy Starter App with Webpack",
+  "description": "AR Digital Solutions Website",
   "browserslist": [
     "defaults"
   ],
   "scripts": {
-    "start": "npm run dev",
-    "dev": "run-s clean eleventy:dev --print-label",
-    "build": "run-s clean eleventy:prod --print-label",
-    "eleventy:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
-    "eleventy:prod": "cross-env ELEVENTY_ENV=production eleventy",
-    "clean": "del-cli dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env ELEVENTY_ENV=development NODE_ENV=development npm-run-all --parallel dev:*",
+    "dev": "cross-env ELEVENTY_ENV=development NODE_ENV=development npm-run-all --parallel dev:*",
+    "build": "cross-env ELEVENTY_ENV=production NODE_ENV=production npm-run-all build:tailwind build:eleventy",
+    "dev:eleventy": "npx eleventy --serve",
+    "dev:tailwind": "npx tailwindcss -i tailwind.css -c tailwind.config.js -o dist/assets/css/tailwind.css --watch",
+    "build:eleventy": "cross-env ELEVENTY_PRODUCTION=true eleventy",
+    "build:tailwind": "npx tailwindcss -i tailwind.css -c tailwind.config.js -o dist/assets/css/tailwind.css --minify"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
@@ -24,6 +24,7 @@
     "critical": "^3.0.0",
     "cssesc": "^3.0.0",
     "del-cli": "^3.0.1",
+    "dotenv": "^16.0.3",
     "focus-trap": "^6.3.0",
     "focus-visible": "^5.2.0",
     "html-minifier": "^4.0.0",
@@ -31,6 +32,7 @@
     "memfs": "^3.2.0",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4",
     "webpack": "^5.28.0"
   },
   "devDependencies": {

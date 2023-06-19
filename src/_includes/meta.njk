@@ -1,6 +1,7 @@
 {# General #}
 <meta name="description" content="{{ description or meta.description }}">
 <link rel="canonical" href="{{ page.url }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 {# Open Graph #}
 <meta property="og:site_name" content="{{ meta.title }}">
@@ -20,3 +21,11 @@
 <link rel="shortcut icon" href="{{ '/assets/images/favicon/favicon.ico' | url }}">
 <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
 <meta name="theme-color" content="#1a1a1a">
+
+{# External Assets #}
+<script defer src="https://kit.fontawesome.com/1ab86dc102.js" crossorigin="anonymous"></script>
+
+{# Internal Assets #}
+<link rel="stylesheet" href="{{ '/css/tailwind.css' | asset }}"/>
+<link rel="stylesheet" href="{{ '/css/main.css' | asset }}"/>
+<script defer src="{{ '/js/main.js' | asset }}"></script>

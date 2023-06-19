@@ -1,5 +1,24 @@
-<footer>
+<footer class="">
+    <div>
 
-
-
+    </div>
+    <div>
+        <h5>Contact</h5>
+        <div>
+            {{ contact.company }}<br>
+            {{ contact.address.address1 }}<br>
+            {% if contact.address.address2 %}{{ contact.address.address2 }}<br>{% endif %}
+            {{ contact.address.town }}<br>
+            {{ contact.address.county }}<br>
+            {{ contact.address.postcode }}
+        </div>
+        {% if contact.address2 %}
+        <div>
+            <span>{{ contact.address2.name }}</span><br>
+            {{ contact.address2.address1 }}<br>
+            {% if contact.address2.address2 %}{{ contact.address2.address2 }}<br>{% endif %}
+            {{ contact.address2.town }}<br>
+            {{ contact.address2.county }}<br>
+            {{ contact.address2.postcode }}
+        </div>
 </footer>
