@@ -1,2 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;700&display=swap');
+
 @import 'utils/variables';
 @import 'utils/mixins';
+
+@import 'base/base';
+@import 'base/button';
+@import 'base/container';
+@import 'base/display';
+@import 'base/list';
+//@import 'base/spacing';
+@import 'base/typography';
+
+@import 'components/header';
+@import 'components/hero';
+@import 'components/footer';

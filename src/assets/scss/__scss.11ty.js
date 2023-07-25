@@ -41,9 +41,6 @@ module.exports = class {
     // Minify & Optimize with CleanCSS in Production
     async minify(css) {
         return new Promise((resolve, reject) => {
-            // if (!isProd) {
-            //     resolve(scss)
-            // }
             const minified = new CleanCSS().minify(css)
             if (!minified.styles) {
                 return reject(minified.error)

@@ -3,7 +3,7 @@
 <head>
     {% include "meta.njk" %}
     {% block head %}{% endblock %}
-    <title>{{ title }} - {{ contact.name }}</title>
+    <title>{% if title %}{{ title }} - {% endif %}{{ contact.name }}</title>
 </head>
 <body>
 {% include "header.njk" %}

@@ -1,0 +1,13 @@
+header {
+  padding: $header-padding-y $container-padding-x;
+
+
+  @include media-up($tablet){
+
+  }
+
+  @include media-up($desktop){
+
+  }
+
+}

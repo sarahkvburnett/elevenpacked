@@ -1,0 +1,16 @@
+footer {
+  padding: $footer-padding-y $container-padding-x;
+
+  img.logo {
+
+  }
+
+  @include media-up($tablet){
+
+  }
+
+  @include media-up($desktop){
+
+  }
+
+}

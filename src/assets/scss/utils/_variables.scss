@@ -1,22 +1,23 @@
 // Colours
-$orange: #FF9900;
-$purple: #9100FF;
+$primary: #005826;
+$secondary: #45A1AD;
 $black: #383838;
 $white: #fff;
 $grey: #EFEFEF;
 $gray: $grey;
+
+$primary-hover: #006b3d;
+$secondary-hover: #3B8A94;
+
 $red: #cc0000;
 $green: #3EB802;
 
 // Breakpoints
-$sm: 640px;
-$md: 768px; //tablet
-$lg: 1024px;
-$xl: 1280px; //desktop
-$xxl: 1736px;
+$tablet: 768px;
+$desktop: 1280px;
 
 //Typography
-$font-family: sans-serif;
+$font-family: 'Public Sans', sans-serif;
 $base-font-size: 16px;
 $body-font-size: 0.9rem;
 $lead-font-size: 1.1rem;
@@ -27,6 +28,7 @@ $h4-font-size: 1.1rem;
 $h5-font-size: $body-font-size;
 
 $body-font-weight: 200;
+
 //Buttons
 $btn-padding: 0.6rem 2rem;
 $btn-border-radius: 25px;

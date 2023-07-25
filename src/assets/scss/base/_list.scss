@@ -1,0 +1,17 @@
+ul {
+  margin-bottom: 1rem;
+
+  li {
+    list-style: none;
+    line-height: 2;
+    display: flex;
+  }
+}
+
+.list-bullet {
+  li:before {
+    @include fa-icon('\f111');
+    font-size: 6px;
+    line-height: 6;
+  }
+}
